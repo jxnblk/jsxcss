@@ -4,7 +4,7 @@ import { StyleSheet, css } from 'aphrodite'
 import createWrappedPragma from './create-wrapped-pragma'
 
 export const config = {
-  pragma: h,
+  pragma: h.context(),
   propName: 'style',
   cssTransform: (originalProps) => {
     const props = { ...originalProps }
@@ -15,8 +15,8 @@ export const config = {
       })
       delete props[p]
       props.className = css(cx.c)
-      return props
     }
+    return props
   }
 }
 

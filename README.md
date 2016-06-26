@@ -66,3 +66,13 @@ It then takes the `style` prop and passes it to Aphrodite's
 
 MIT License
 
+---
+
+To do
+
+- [ ] Plain hyperscript version
+- [ ] Nestable hyperscript jsx (use preact's function)
+- [ ] `_style` prop for style attribute
+- [ ] Make configuration work
+- [ ] Fix babel preset
+

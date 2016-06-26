@@ -15,8 +15,8 @@ export const config = {
       })
       delete props[p]
       props.className = css(cx.c)
-      return props
     }
+    return props
   }
 }
 
