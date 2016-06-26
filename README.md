@@ -1,6 +1,8 @@
 
 # jsxcss
 
+**Experimental**
+
 Function to transform JSX style prop into CSS with support for pseudo classes and media queries
 
 ## Getting Started
