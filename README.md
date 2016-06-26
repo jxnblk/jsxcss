@@ -72,7 +72,6 @@ To do
 
 - [ ] Plain hyperscript version
 - [ ] Nestable hyperscript jsx (use preact's function)
-- [ ] `_style` prop for style attribute
 - [ ] Make configuration work
 - [ ] Fix babel preset
 

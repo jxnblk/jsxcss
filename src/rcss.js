@@ -13,8 +13,12 @@ export const config = {
       const cx = StyleSheet.create({
         c: props[p]
       })
-      delete props[p]
       props.className = css(cx.c)
+      delete props[p]
+    }
+    if (props && props._style) {
+      props.style = props._style
+      delete props._style
     }
     return props
   }
