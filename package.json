@@ -1,6 +1,6 @@
 {
   "name": "jsxcss",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "JSX pragma to transform style prop into CSS with support for pseudo-classes and media queries",
   "main": "dist/index.js",
   "scripts": {
