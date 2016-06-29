@@ -1,5 +1,6 @@
 
 export { default as hcss } from './hcss'
+export { default as hcxs } from './hcxs'
 export { default as rcss } from './rcss'
 
 import * as jsxcss from '.'
