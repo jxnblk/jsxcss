@@ -6,7 +6,7 @@
   "plugins": [
     [
       "transform-react-jsx", {
-        "pragma": "hcss"
+        "pragma": "h.default"
       }
     ]
   ]

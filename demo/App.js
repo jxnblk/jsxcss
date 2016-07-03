@@ -1,5 +1,5 @@
-
-import { hcss } from '..'
+// Framework-agnostic functional UI component demo
+// Notice: no import React, etc.
 
 const breakpoints = {
   sm: '@media screen and (min-width: 52em)',
@@ -9,7 +9,7 @@ const breakpoints = {
 const App = () => {
   // This style object will be converted to CSS
   // and injected into a style tag in the document head.
-  const sx = {
+  const cx = {
     root: {
       fontFamily: '-apple-system,sans-serif',
       padding: 32,
@@ -21,6 +21,9 @@ const App = () => {
       fontSize: 48,
       marginTop: 0,
       marginBottom: 16,
+      ':hover': {
+        color: 'magenta'
+      },
       [breakpoints.sm]: {
         fontSize: 64
       },
@@ -37,11 +40,11 @@ const App = () => {
   }
 
   return (
-    <div style={sx.root}>
-      <h1 style={sx.heading}>Hello jsxcss</h1>
+    <div className={cx.root}>
+      <h1 className={cx.heading}>Hello jsxcss</h1>
       <p>Using hyperscript and yo-yo</p>
       <a href='//github.com/jxnblk/jsxcss'
-        style={sx.link}>
+        className={cx.link}>
         GitHub
       </a>
     </div>

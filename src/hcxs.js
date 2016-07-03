@@ -1,22 +1,19 @@
 
 import h from 'hyperscript'
 import cxs from 'cxs'
-import { StyleSheet, css } from 'aphrodite'
 import createWrappedPragma from './create-wrapped-pragma'
+
+cxs.options.autoAttach = true
 
 export const config = {
   pragma: h.context(),
-  propName: 'style',
+  propName: 'className',
+  propTransform: props => props,
   cssTransform: (originalProps) => {
     const props = { ...originalProps }
     const p = config.propName
-    if (props && props[p]) {
+    if (props && props[p] && typeof props[p] === 'object') {
       props.className = cxs(props[p])
-      delete props[p]
-    }
-    if (props && props._style) {
-      props.style = props._style
-      delete props._style
     }
     return props
   }

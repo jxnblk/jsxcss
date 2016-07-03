@@ -5,20 +5,15 @@ import createWrappedPragma from './create-wrapped-pragma'
 
 export const config = {
   pragma: createElement,
-  propName: 'style',
+  propName: 'className',
   cssTransform: (originalProps) => {
     const props = { ...originalProps }
     const p = config.propName
-    if (props && props[p]) {
+    if (props && props[p] && typeof props[p] === 'object') {
       const cx = StyleSheet.create({
         c: props[p]
       })
       props.className = css(cx.c)
-      delete props[p]
-    }
-    if (props && props._style) {
-      props.style = props._style
-      delete props._style
     }
     return props
   }
