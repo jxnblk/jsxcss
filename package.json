@@ -2,7 +2,7 @@
   "name": "jsxcss",
   "version": "1.0.0-beta.3",
   "description": "JSX pragma to transform style prop into CSS with support for pseudo-classes and media queries",
-  "main": "dist/index.js",
+  "main": "dist/hcxs.js",
   "scripts": {
     "prepublish": "mkdir -p dist && babel src --out-dir dist",
     "start": "webpack-dev-server"
@@ -12,7 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "aphrodite": "^0.4.0",
-    "cxs": "^1.0.0-beta.4",
+    "cxs": "^1.0.0-beta.6",
     "hyperscript": "^1.4.7",
     "react": "^15.1.0"
   },
